@@ -1,0 +1,75 @@
+/*css重置样式 */
+
+::before, ::after {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*点击屏幕 高亮效果  清除高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+html
+{
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family:  Microsoft YaHei,sans-serif;
+    color: #333;
+}
+a{
+    color: #333;
+    text-decoration: none;
+
+}
+input,textarea
+{
+    /*清除外围的轮廓线*/
+    outline: none;
+    /*去除*/
+    resize: none;
+    /*清除默认样式 立体效果*/
+    -webkit-appearance: none;
+}
+ul,li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*
+/!*common css 公共样式 模块样式*!/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+/!*需要压缩一倍  目的是解决移动端图标失真问题*!/
+[class^="icon_"],[class*=" icon_"]{
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+
+.ml10{
+    margin-left: 10px;
+}
+.mr10{
+    margin-right: 10px;
+}*/
